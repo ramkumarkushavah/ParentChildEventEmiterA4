@@ -1,0 +1,10 @@
+
+<div id = "parent">
+<p>
+  ==============Parent Component================<br/><br/>
+  Messing Receiving From Child : {{this.displayMsg}}
+</p>
+<button (click) = "sendMSGParent()">Send Msg</button>
+</div>
+
+<app-child [count]="count" (childData) = msgReceiving($event)></app-child>
